@@ -16,6 +16,8 @@ services:
     build: .
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     restart: always
     ports:
       - 8080:8080
